@@ -57,7 +57,6 @@ def process_file(input_file, output_file):
             numbers.append(float(line))
         except ValueError:
             print(f"Error in line {line_number}: '{line}' is not a valid number.")
-        
 
     if not numbers:
         print("No valid numbers found. Exiting.")

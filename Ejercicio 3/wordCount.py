@@ -27,7 +27,7 @@ def count_words(text):
     word_count = {}
     word = ""
     for char in text:
-        if char.isalnum(): 
+        if char.isalnum():
             word += char.lower()
         else:
             if word:
@@ -36,7 +36,7 @@ def count_words(text):
                 else:
                     word_count[word] = 1
                 word = ""
-    if word:  
+    if word:
         if word in word_count:
             word_count[word] += 1
         else:
